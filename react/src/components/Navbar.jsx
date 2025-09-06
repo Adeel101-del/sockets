@@ -13,8 +13,11 @@ function Navbar() {
                 </div>
 
                 {auth ? (
-                    <div>
-                        hello
+                    <div id="link-container" className="navbar-child" >
+                        <NavLink to="/profile/:username" className="">
+                            
+                        </NavLink>
+
                     </div>
                 ) : (
                     < div id="link-container" className="navbar-child">
