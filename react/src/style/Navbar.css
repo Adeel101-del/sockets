@@ -1,0 +1,58 @@
+#Navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0; /* ensures it never exceeds viewport width */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .5em 1em; /* use left-right padding safely */
+  background: white;
+  color: black;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  box-sizing: border-box; /* padding included inside width */
+  margin-bottom: 4em;
+}
+
+
+
+
+#logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+#link-container {
+  display: flex;
+  gap: 1.5rem; /* space between links */
+
+}
+
+.nav-links {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: color 0.3s ease, transform 0.2s ease;
+  background: linear-gradient(to right, #ef2cc5,#cb4fea, #614fea);
+  padding: .5em;
+  border-radius: 8px;
+}
+
+.nav-links:hover {
+  color: #ffffff; /* Yellow on hover */
+    background: linear-gradient(to right, #d828b2,#b145cb, #5344c8);
+  transform: translateY(-1px);
+}
+.nav-links.active {
+  background: linear-gradient(to right, #ef2cc5, #cb4fea, #614fea);
+  color: white;
+  border-radius: 8px;
+}
+
+.nav-links-text {
+  list-style: none;
+}
+/**/
